@@ -2,31 +2,20 @@ import java.util.ArrayList;
 
 public class Funcionario extends Pessoa{
     
-    private int cadastro;
+    private String cadastro;
     private String profissao;
 
-    @Override
-    public Object readOne(int cadastro) {
-        return null;
+    public Funcionario(String cpf, String nome, int idade, String cadastro, String profissao) {
+        super(cpf, nome, idade);
+        this.cadastro = cadastro;
+        this.profissao = profissao;
     }
 
-    @Override
-    public ArrayList<Object> readAll() {
-        return null;
+    public void setCadastro(String cadastro) {
+        this.cadastro = cadastro;
     }
 
-    @Override
-    public void create() {
-
-    }
-
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void update() {
-
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
     }
 }

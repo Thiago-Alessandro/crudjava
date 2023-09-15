@@ -1,33 +1,14 @@
-import java.util.ArrayList;
-
 public class Televisao extends Eletronico{
 
-    private boolean ligada;
+    private boolean ligada = false;
     private double polegadas;
 
-
-    @Override
-    public Televisao readOne(int codigo) {
-        return null;
+    public Televisao(double preco, String marca, double polegadas) {
+        super(preco, marca);
+        this.polegadas = polegadas;
     }
 
-    @Override
-    public ArrayList<Object> readAll() {
-        return null;
-    }
-
-    @Override
-    public void create() {
-
-    }
-
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void update() {
-
+    public void setPolegadas(double polegadas) {
+        this.polegadas = polegadas;
     }
 }

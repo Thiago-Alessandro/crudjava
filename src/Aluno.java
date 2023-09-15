@@ -2,31 +2,20 @@ import java.util.ArrayList;
 
 public class Aluno extends Pessoa{
 
-    private int matricula;
+    private String matricula;
     private String instituicaoEnsino;
 
-    @Override
-    public Object readOne(int matricula) {
-        return null;
+    public Aluno(String cpf, String nome, int idade, String matricula, String instituicaoEnsino) {
+        super(cpf, nome, idade);
+        this.matricula = matricula;
+        this.instituicaoEnsino = instituicaoEnsino;
     }
 
-    @Override
-    public ArrayList<Object> readAll() {
-        return null;
+    public void setInstituicaoEnsino(String instituicaoEnsino) {
+        this.instituicaoEnsino = instituicaoEnsino;
     }
 
-    @Override
-    public void create() {
-
-    }
-
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void update() {
-
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 }

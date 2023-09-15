@@ -1,34 +1,13 @@
-import java.util.ArrayList;
-
 public class Microondas extends Eletronico{
 
-    private int potencia;
-    private int temporizador;
+    private int potencia = 100;
+    private int temporizador = 0;
 
-    private static ArrayList<Microondas> listaMicroondas = new ArrayList<>();
-
-    @Override
-    public Microondas readOne(int codigo) {
-        return null;
+    public Microondas(double preco, String marca) {
+        super(preco, marca);
     }
 
-    @Override
-    public ArrayList<Object> readAll() {
-        return null;
-    }
-
-    @Override
-    public void create() {
-
-    }
-
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void update() {
-
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
     }
 }
