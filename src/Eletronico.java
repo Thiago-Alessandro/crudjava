@@ -13,6 +13,14 @@ public abstract class Eletronico{
         return codigo;
     }
 
+    public double getPreco() {
+        return preco;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }

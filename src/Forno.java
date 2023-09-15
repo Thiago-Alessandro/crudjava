@@ -20,4 +20,16 @@ public class Forno extends Eletronico{
     public void setTemperaturaMax(double temperatura) {
         this.temperaturaMax = temperatura;
     }
+
+    @Override
+    public String toString() {
+        return  "\n     FORNO" +
+                "\nCodigo: " + getCodigo() +
+                "\nPreco: " + getPreco() +
+                "\nMarca: " + getMarca() +
+                "\nTemperatura máxima: " + temperaturaMax+
+                "\nLuz ligada: " + luzInternaLigada +
+                "\nForno ligado: " + ligado + "\n";
+    }
+
 }

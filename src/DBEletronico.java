@@ -35,9 +35,7 @@ public class DBEletronico implements ICrud<Integer, Eletronico>{
     public Eletronico update(Eletronico object) {
         Eletronico oldObject = readOne(object.getCodigo());
         if(oldObject != null){
-            int index = eletronicos.indexOf(oldObject);
-            eletronicos.remove(oldObject);
-            eletronicos.add(index, object);
+           eletronicos.set(eletronicos.indexOf(oldObject), object);
             return object;
         }
 //        for (Eletronico eletronico : eletronicos){

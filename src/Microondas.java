@@ -10,4 +10,15 @@ public class Microondas extends Eletronico{
     public void setPotencia(int potencia) {
         this.potencia = potencia;
     }
+
+    @Override
+    public String toString() {
+        return  "\n     MICROONDAS" +
+                "\nCodigo: " + getCodigo() +
+                "\nPreco: " + getPreco() +
+                "\nMarca: " + getMarca() +
+                "\nPotencia: " + potencia +
+                "\nTemporizador: " + temporizador + "\n";
+    }
+
 }

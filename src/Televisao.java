@@ -11,4 +11,15 @@ public class Televisao extends Eletronico{
     public void setPolegadas(double polegadas) {
         this.polegadas = polegadas;
     }
+
+    @Override
+    public String toString() {
+        return  "\n     TELEVISAO" +
+                "\nCodigo: " + getCodigo() +
+                "\nPreco: " + getPreco() +
+                "\nMarca: " + getMarca() +
+                "\nPolegadas: " + polegadas+
+                "\nTelevisao ligada: " + ligada + "\n";
+    }
+
 }

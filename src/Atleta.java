@@ -20,10 +20,12 @@ public class Atleta extends Pessoa{
 
     @Override
     public String toString() {
-        return """
-                    ATLETA
+        return  "\n     ATLETA" +
+                "\nCodigo: " + getCodigo() +
+                "\nNome: " + getNome() +
+                "\nCPF: " + getCpf() +
+                "\nIdade: " + getIdade() +
                 "\nMedalhas: " + quantiaMedalhas +
-                "Modalidade: " + 
-                """
+                "\nModalidade: " + modalidade + "\n";
     }
 }

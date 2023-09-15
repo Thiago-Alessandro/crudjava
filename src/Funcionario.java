@@ -18,4 +18,16 @@ public class Funcionario extends Pessoa{
     public void setProfissao(String profissao) {
         this.profissao = profissao;
     }
+
+    @Override
+    public String toString() {
+        return  "\n     FUNCIONARIO" +
+                "\nCodigo: " + getCodigo() +
+                "\nNome: " + getNome() +
+                "\nCPF: " + getCpf() +
+                "\nIdade: " + getIdade() +
+                "\nCadastro: " + cadastro +
+                "\nProfissao: " + profissao + "\n";
+    }
+
 }

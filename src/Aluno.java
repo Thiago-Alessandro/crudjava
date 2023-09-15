@@ -18,4 +18,16 @@ public class Aluno extends Pessoa{
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        return  "\n     ALUNO" +
+                "\nCodigo: " + getCodigo() +
+                "\nNome: " + getNome() +
+                "\nCPF: " + getCpf() +
+                "\nIdade: " + getIdade() +
+                "\nMatricula: " + matricula +
+                "\nInstituicao de ensino: " + instituicaoEnsino + "\n";
+    }
+
 }
